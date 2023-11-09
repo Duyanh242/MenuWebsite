@@ -32,7 +32,7 @@ top:20px;
 display: flex;
 justify-content: space-between;
 width:60%;
-height: 40px;
+height: 100px;
 }
 .label_home{
 font-size: 18px;
@@ -43,10 +43,17 @@ font-size: 18px;
 }
 .label_Lecture{
 font-size: 18px;
+
+}
+.label_Lecture-Lab4{
+font-size: 18px;
+}
+.con_lab4{
+    display: none;
 }
 .label_Lecture:hover{
-    color:#999;
     cursor: pointer;
+    color: #999;
 }
 .icon_choice{
 font-size: 35px;
@@ -142,4 +149,18 @@ color: white;
 color: white;
 position: relative;
 top:20px
+}
+.con_lab4{
+ position: relative;
+ top:10px;
+ left: -200px;
+}
+.con_label {
+width: 200px;
+height: 100px;
+position: relative;
+top:-5px;
+}
+.con_label:hover + #container_lab4{
+display: block;
 }
