@@ -1,176 +1,71 @@
 .container_main{
     width: 100%;
     height: 100vh;
-    background-image: url(https://tse3.mm.bing.net/th?id=OIP.66g5japaGFIfA5EiDK3-SAHaEo&pid=Api&P=0&h=180);
+    background-image: url(https://tse2.mm.bing.net/th?id=OIP.h3U-yGZNxT8PkF5vlRnnxgHaEK&pid=Api&P=0&h=180);
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.container_header{
-    width: 100%;
-    height: 70px;
-    display: flex;
-    position: relative;
-}
-.label_name{
-position: absolute;
-top:0px;
-left: 0px;
-}
-.icon_user{
-width: 90px;
-height: 70px;
-}
-.label_myname{
-font-size: 30px;
-position: relative;
-bottom: 25px;
-}
-.container_menu{
-position: absolute;
-right: 30px;
-top:20px;
-display: flex;
-justify-content: space-between;
-width:60%;
-height: 100px;
-}
-.label_home{
-font-size: 18px;
-}
-.label_home:hover{
-    color:#999
+.box_menu{
     
 }
-.label_Lecture{
-font-size: 18px;
-
+.box_menu ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
 }
-.label_Lecture-Lab4{
-font-size: 18px;
+.box_menu ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
 }
-.con_lab4{
+.box_menu ul li a{
+    text-decoration: none;
+}
+.active, .box_menu ul li:hover{
+    
+    border-radius: 3px;
+}
+.box_subMenu{
     display: none;
 }
-.label_Lecture:hover{
-    cursor: pointer;
-    color: #999;
-}
-.icon_choice{
-font-size: 35px;
-}
-.icon_choice:hover{
-    color: #999;
-    cursor: pointer;
-}
-.container_center{
-    width: 100%;
-    height: 100%;
-display: flex;
-justify-content: space-around;
-
-}
-.container_infor{
-position: relative;
-top: 30px;
-right: 100px;
-}
-.img_avartar{
-    position: relative;
-    width: 500px;
-    height: 400px;
-    top: 60px;
-}
-.title{
-font-size: 50px;
-}
-.title_name{
-display: block;
-font-size: 30px;
-}
-.title_id{
-font-size: 30px;
-}
-.paragraph{
-font-size: 20px;
-
-}
-.container_passion{
-width: 500px;
-height: 100px;
-}
-.label_passion{
-display: block;
-font-size: 25px;
-}
-.icon_passion{
-    width: 500px;
-    height: 30px;
-    position: relative;
-    top: 20px;
-    display: flex;
-}
-.icon_book{
-width: 30px;
-height: 30px;
-margin-right: 30px;
-}
-.icon_music{
-width: 30px;
-height: 30px;
-margin-right: 30px;
-}
-.icon_eating{
-width: 30px;
-height: 30px;
-margin-right: 30px;
-}
-.icon_walk{
-width: 30px;
-height: 30px;
-margin-right:30px;
-}
-.container_footer{
-width: 100%;
-height: 70px;
-background-color: black;
-text-align: center;
-}
-.container_footer-top{
-position: relative;
-top: 10px;
-}
-.icon_world{
-    color: white;
-}
-.label_product{
-color: white;
-}
-.mail{
-color: white;
-position: relative;
-top:20px
-}
-.con_lab4{
- position: relative;
- top:10px;
- left: -200px;
-}
-.con_label {
-width: 200px;
-height: 100px;
-position: relative;
-top:-5px;
-}
-.con_label:hover + #container_lab4{
-display: block;
-}
-.con_lab5{
-width: 200px;
-height: 150px;
-}
-.con_lab5:hover + .con-choice{
+.box_menu ul li:hover .box_subMenu{
     display: block;
+    position: absolute;
+    background-color: aquamarine;
+    margin-top: 15px;
+    margin-left: -15px;
 }
-.con-choice{
+.box_menu ul li:hover .box_subMenu ul{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+.box_menu ul li:hover .box_subMenu ul li{
+   width: 220px;
+   text-align: left;
+   border-bottom: 1px dotted #999;
+   background: transparent;
+   padding: 15px;
+   margin: 10px;
+}
+.box_menu ul li:hover .box_subMenu ul li:last-child{
+    border-bottom: none;
+}
+.box_subMenu-2{
     display: none;
+}
+.sub_menuHover:hover .box_subMenu-2{
+    display: block;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 130px;
+    background: #999;
+}
+.a-div{
+    font-size: 25px;
+    color: black;
+}
+.a-div:hover{
+    color: red;
+    text-decoration: underline;
 }
